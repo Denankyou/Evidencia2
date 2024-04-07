@@ -32,6 +32,7 @@
     <button class="delete" type="submit">Delete</button>
 </form>
     @endforeach
+    <br>
 <button class="add-book-button" href=" {{ route('books.create') }}">Add New Book</a>
 
 
