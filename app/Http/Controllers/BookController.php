@@ -40,7 +40,7 @@ class BookController extends Controller
         $book = Books::find($id); //SELECT * FROM courses WHERE id=6 LIMIT 1
         
         $book -> title = $request -> title;
-        $book -> author_name = $request -> dauthor_name;
+        $book -> author_name = $request -> author_name;
         $book -> isbn = $request -> isbn;
         $book -> published_year = $request -> published_year;
 
@@ -53,8 +53,8 @@ class BookController extends Controller
     } //Add a default value of null
 
     public function destroy($id){
-        $course = Books::find($id);
-        $course -> delete();
-        return redirect() ->route('book.index');
+        $book = Books::find($id);
+        $book -> delete();
+        return redirect() ->route('books.index');
     }
 }

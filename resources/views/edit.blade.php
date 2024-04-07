@@ -9,16 +9,16 @@
         {{-- Este se pone cuando se usa put o delete --}}
 
         <label for="">Title</label><br>
-        <input type="text" name="title" id="title" value="{{$book>title}}">
+        <input type="text" name="title" id="title" value="{{$book->title}}">
         <br>
         <label for="">Author Name</label><br>
-        <input type="text" name="author_name" id="author_name" value="{{$$book->description}}">
+        <input type="text" name="author_name" id="author_name" value="{{$book->description}}">
         <br>
         <label for="">ISBN</label><br>
-        <input type="text" name="isbn" id="isbn" value="{{$$book->Instructor}}">
+        <input type="text" name="isbn" id="isbn" value="{{$book->Instructor}}">
         <br>
         <label for="">Published Year</label><br>
-        <input type="number" name="published_year" id="published_year" value="{{$$book->email}}">
+        <input type="number" name="published_year" id="published_year" value="{{$book->email}}">
         <br>
         <input type="submit" value="Add Book">
     
