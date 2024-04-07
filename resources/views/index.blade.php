@@ -22,7 +22,7 @@
 </br>
     {{$book -> published_year}}
 </br>
-<button class="add-book-button" href=" {{ route('books.edit', $book -> id) }}">Edit This Book</a>
+<a class="add-book-button" href=" {{ route('books.edit', $book -> id) }}">Edit This Book</a>
 
 
 <form action="{{route('books.destroy', $book->id)}}" method="post">
@@ -33,7 +33,7 @@
 </form>
     @endforeach
     <br>
-<button class="add-book-button" href=" {{ route('books.create') }}">Add New Book</a>
+<a class="add-book-button" href=" {{ route('books.create') }}">Add New Book</a>
 
 
 </body>
