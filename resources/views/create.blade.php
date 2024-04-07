@@ -24,7 +24,7 @@
     <label for="">Published Year</label><br>
     <input type="number" name="published_year" id="published_year"> 
     <br>
-    <input type="submit" value="Add Course">
+    <input type="submit" value="Add Book">
 
 </form>
 
